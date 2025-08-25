@@ -6,6 +6,8 @@ import com.commerce.model.User;
 import com.commerce.service.JWTService;
 import com.commerce.service.UserService;
 import jakarta.validation.Valid;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;

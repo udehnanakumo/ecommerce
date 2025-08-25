@@ -19,6 +19,7 @@ public interface ProductMapper {
     @Mapping(target = "image", source = "image")
     Product toEntity(ProductDTO productDTO);
 
+
     CommentDTO toDTO(Comment comment);
 
     Comment toEntity(CommentDTO commentDTO);
