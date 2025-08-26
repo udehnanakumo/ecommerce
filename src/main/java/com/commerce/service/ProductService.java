@@ -28,5 +28,11 @@ public class ProductService {
             product.setImage("/images/"+fileName);
         }
         Product savedProduct = productRepository.save(product);
+        return productMapper.toDTO(savedProduct);
+    }
+
+    @Transactional
+    public ProductDTO updateProduct(Long id, ProductDTO productDTO, MultipartFile image) throws IOException{
+       Product existingProduct = productRepository.findById(id);
     }
 }
